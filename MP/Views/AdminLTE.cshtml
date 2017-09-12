@@ -1,0 +1,16 @@
+﻿@{
+    if (Session["UserID"] == null)
+    {
+        Response.Redirect("~/View/Login");
+    }
+}
+
+<section>
+    <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        @RenderBody()
+    </ul>
+
+</section>
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4fc226e0f4e445c7b22a42ede8082ff8" Name="Diagram1">
+        <EntityTypeShape EntityType="DemoModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.Admintrastor" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.AspNetUsers" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.Category" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.ChildMenu" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.GrantPermission" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.Menu" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.Menu_Permission" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.Permission" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.Post" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="DemoModel.FK_Admintrastor_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_Category_dbo_Admintrastor_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_GrantPermission_dbo_Admintrastor_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_Post_dbo_Admintrastor_Admintrastor_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_Post_dbo_Category_CategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_ChildMenu_Menu1" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_dbo_GrantPermission_dbo_Permission_PermissionID" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_Menu_Permission_Menu1" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.FK_Menu_Permission_Permission1" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

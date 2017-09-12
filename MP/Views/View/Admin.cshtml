@@ -1,0 +1,25 @@
+﻿@using MP.Models;
+@model List<MenuChild>
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/AdminLTE.cshtml";
+}
+@foreach (var item in Model)
+{
+    <li class="treeview">
+        <a href="#">
+            <i class="fa fa-dashboard"></i> <span>@item.MenuName</span>
+            <span class="pull-right-container">
+                <span class="label label-primary pull-right bg-purple">5</span>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+            @foreach (var me in item.ChildMenu)
+            {
+                <li><a href="#"><i class="fa fa-circle-o"></i>@me</a></li>
+            }
+        </ul>
+    </li>
+
+}
+
